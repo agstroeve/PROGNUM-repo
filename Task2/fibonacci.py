@@ -1,0 +1,10 @@
+n = 100
+term1 = 0
+term2 = 1 
+next = term2
+count = 1 
+while count <= n:
+    count += 1
+    term1, term2 = term2, next
+    next = term1+term2
+    print(next, end=" ")
